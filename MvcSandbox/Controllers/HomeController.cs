@@ -33,7 +33,7 @@ namespace MvcSandbox.Controllers
         }
 
         [Route("/contact-us", Name = "Contact")]
-        public IActionResult Contact()
+        public IActionResult Contact([FromForm]Contact info)
         {
             return View();
         }
@@ -43,5 +43,12 @@ namespace MvcSandbox.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+    }
+
+    public class Contact
+    {
+        public string Name { get; set; }
+
+        public string Message { get; set; }
     }
 }

@@ -13,6 +13,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using MvcSandbox.Middleware;
+using MvcSandbox.Model_Binding;
 
 namespace MvcSandbox
 {
@@ -36,6 +37,12 @@ namespace MvcSandbox
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
             services.AddControllersWithViews();
+
+            services.AddMvc(options =>
+                {
+                    options.ModelBinderProviders.Insert(0, new CSVModelBinderProvider());
+                })
+                .SetCompatibilityVersion(Microsoft.AspNetCore.Mvc.CompatibilityVersion.Latest);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

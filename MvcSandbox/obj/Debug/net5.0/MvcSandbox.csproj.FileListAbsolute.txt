@@ -84,3 +84,4 @@ C:\Users\jjange\Source\Repos\MvcSandbox\MvcSandbox\obj\Debug\net5.0\MvcSandbox.d
 C:\Users\jjange\Source\Repos\MvcSandbox\MvcSandbox\obj\Debug\net5.0\ref\MvcSandbox.dll
 C:\Users\jjange\Source\Repos\MvcSandbox\MvcSandbox\obj\Debug\net5.0\MvcSandbox.pdb
 C:\Users\jjange\Source\Repos\MvcSandbox\MvcSandbox\obj\Debug\net5.0\MvcSandbox.genruntimeconfig.cache
+C:\Users\jjange\Source\Repos\MvcSandbox\MvcSandbox\obj\Debug\net5.0\Razor\Views\Shared\Outage.cshtml.g.cs
